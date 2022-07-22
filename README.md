@@ -26,7 +26,7 @@ This is the project I have followed along in the basic Javascript course of [F8]
 ![App](./app/img-1.png)
 ![App-playlist](./app/img-2.png)
 
-[Live Site URL]()
+[Live Site URL](https://anhhuynh1506.github.io/MusicPlayerApp/)
 
 ## Author
 
