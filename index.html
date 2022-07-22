@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="player pausing">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb" style="background-image: url('./assets/song-bg/img-1.jpg')">
+                </div>
+            </div>
+
+            <!-- Header -->
+            <header class="heading">
+                <h1></h1>
+                <h2></h2>
+            </header>
+
+            <!-- Progress bar -->
+            <input id="progress" class="progress" type="range" value="0" step="0.01" min="0" max="100">
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <img src="./assets/imgs/repeat.png" alt="">
+                </div>
+                <div class="btn btn-prev">
+                    <img src="./assets/imgs/backward.png" alt="">
+                </div>
+                <div class="btn btn-toggle-play">
+                    <img class='icon-pause' src="./assets/imgs/pause.png" alt="">
+                    <img class='icon-play' src="./assets/imgs/play.png" alt="">
+                </div>
+                <div class="btn btn-next">
+                    <img src="./assets/imgs/forward.png" alt="">
+                </div>
+                <div class="btn btn-random">
+                    <img src="./assets/imgs/random.png" alt="">
+                </div>
+            </div>
+
+            <audio id="audio" src=""></audio>
+            <div class="playlist-icon">
+                <img class='playlist-icon-img' src="./assets/imgs/playlist.png" alt="">
+            </div>
+        </div>
+
+        <div class="playlist" style="display: none">
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
